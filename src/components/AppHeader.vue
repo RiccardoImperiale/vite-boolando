@@ -1,5 +1,4 @@
 <script>
-
 export default {
   name: 'AppHeader',
   data() {
@@ -17,21 +16,21 @@ export default {
     }
   }
 }
-
 </script>
+
 <template>
   <header>
     <!-- Navbar -->
     <nav class="container">
-      <!-- Nav Links  -->
+      <!-- Nav Links -->
       <ul class="nav_links">
-        <li v-for="link in navLinks"><a :href=link.href>{{ link.text }}</a></li>
+        <li v-for="link in navLinks"><a :href="link.href">{{ link.text }}</a></li>
       </ul>
       <!-- Logo -->
       <img width="135" class="logo_boolando" src="/img/boolean-logo.png" alt="logo boolando">
       <!-- Nav Icons -->
       <div class="nav_icons">
-        <a v-for="icon in footerIcons" :href=icon.href><i :class=icon.class></i></a>
+        <a v-for="icon in footerIcons" :href="icon.href"><i :class="icon.class"></i></a>
       </div>
     </nav>
   </header>
