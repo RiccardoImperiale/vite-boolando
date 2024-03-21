@@ -52,7 +52,7 @@ header {
   }
 
   .nav_icons a {
-    margin-left: .25rem;
+    margin-left: .5rem;
   }
 
 }
