@@ -1,0 +1,241 @@
+/* #region Utilities */
+@use './partials/variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1380px;
+  margin: auto;
+  width: 80%;
+}
+
+
+// Commons -------------------------------------> 
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+// Header style ------------------------------------->
+
+header {
+  background-color: $primary_color;
+  box-shadow: 0 1px 10px $shadow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .nav_links {
+    display: flex;
+    gap: 1rem;
+    font-size: .9rem;
+    font-weight: 800;
+  }
+
+  .nav_icons a {
+    margin-left: .5rem;
+  }
+
+}
+
+// Main style ------------------------------------->
+
+main {
+  .cards_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    height: 700px;
+    width: calc((100% / 12) * 4 - 1rem);
+    margin-top: 5rem;
+  }
+
+  .card_image {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
+  /* Card Images ------------------> */
+
+  .first_card_image {
+    background-image: url('/img/1.webp');
+  }
+
+  .first_card_image:hover {
+    background-image: url('/img/1b.webp');
+  }
+
+  .second_card_image {
+    background-image: url('/img/2.webp');
+  }
+
+  .second_card_image:hover {
+    background-image: url('/img/2b.webp');
+  }
+
+  .third_card_image {
+    background-image: url('/img/3.webp');
+  }
+
+  .third_card_image:hover {
+    background-image: url('/img/3b.webp');
+  }
+
+  .fourth_card_image {
+    background-image: url('/img/4.webp');
+  }
+
+  .fourth_card_image:hover {
+    background-image: url('/img/4b.webp');
+  }
+
+  .fifth_card_image {
+    background-image: url('/img/5.webp');
+  }
+
+  .fifth_card_image:hover {
+    background-image: url('/img/5b.webp');
+  }
+
+  .sixth_card_image {
+    background-image: url('/img/6.webp');
+  }
+
+  .sixth_card_image:hover {
+    background-image: url('/img/6b.webp');
+  }
+
+
+  .heart {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    width: 40px;
+    background-color: white;
+    top: 1rem;
+    right: 0;
+  }
+
+  .heart:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .promo_badges {
+    display: flex;
+    gap: .2rem;
+    font-size: .8rem;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    bottom: 3rem;
+  }
+
+  .badge {
+    padding: .45rem .75rem;
+  }
+
+  .percentage {
+    background-color: red;
+  }
+
+  .sustainability {
+    background-color: green;
+  }
+
+  /* Card Text ------------------------------> */
+
+  .card_text {
+    margin-top: .25rem;
+  }
+
+  & h4 {
+    text-transform: uppercase;
+  }
+
+  & h5,
+  .price {
+    font-weight: 400;
+    font-size: .8rem;
+  }
+
+  .new_price {
+    font-weight: 600;
+    color: red;
+  }
+
+  .old_price {
+    text-decoration: line-through;
+  }
+
+}
+
+// Footer style ------------------------------------->
+
+footer {
+  background-color: $bg_dark;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  color: $light;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site_info h4 {
+    font-size: .8rem;
+  }
+
+  .info_links,
+  .social_links {
+    margin-top: .5rem;
+  }
+
+  .site_info a,
+  .socials a {
+    font-size: .8rem;
+    margin-right: .5rem;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-brands {
+    font-size: 1.3rem;
+  }
+}

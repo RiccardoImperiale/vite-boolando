@@ -30,40 +30,4 @@ export default {
   </footer>
 </template>
 
-<style scoped>
-footer {
-  background-color: #1A1A1A;
-  margin-top: 5rem;
-  padding: 2rem 0;
-  color: white;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .site_info h4 {
-    font-size: .8rem;
-  }
-
-  .info_links,
-  .social_links {
-    margin-top: .5rem;
-  }
-
-  .site_info a,
-  .socials a {
-    font-size: .8rem;
-    margin-right: .5rem;
-  }
-
-  .socials {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .fa-brands {
-    font-size: 1.3rem;
-  }
-}
-</style>
+<style></style>
