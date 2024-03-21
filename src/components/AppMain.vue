@@ -1,5 +1,4 @@
 <script>
-
 export default {
     name: 'AppMain',
     data() {
@@ -123,7 +122,6 @@ export default {
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 </template>
