@@ -89,8 +89,7 @@ export default {
                     badges: {
                         sustainable: true
                     }
-                },
-
+                }
             ]
         }
     }
