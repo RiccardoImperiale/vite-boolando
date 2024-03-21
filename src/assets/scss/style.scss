@@ -1,8 +1,6 @@
-@use './partials/variables' as *;
 @use './partials/header';
 @use './partials/main';
 @use './partials/footer';
-
 
 * {
 	margin: 0;
@@ -28,5 +26,4 @@ ul {
 
 a {
 	text-decoration: none;
-	color: $light;
 }

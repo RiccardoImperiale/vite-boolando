@@ -16,6 +16,10 @@ header {
         justify-content: space-between;
         padding: 1rem 0;
 
+        a {
+            color: $light;
+        }
+
         .nav_links {
             display: flex;
             gap: 1rem;
