@@ -14,8 +14,14 @@ export default {
 <template>
     <div class="card">
         <div class="card_image">
-            <img @mouseover="imageHover = true" @mouseleave="imageHover = false"
-                :src="imageHover ? product.backImage : product.frontImage" alt="">
+            <!-- <img @mouseover="imageHover = true" @mouseleave="imageHover = false"
+                :src="imageHover ? product.backImage : product.frontImage" alt=""> -->
+            <div class="images_container" @mouseover="imageHover = true" @mouseleave="imageHover = false">
+                <Transition>
+                    <img v-if="imageHover" :src="product.backImage" alt="">
+                    <img v-else :src="product.frontImage" alt="">
+                </Transition>
+            </div>
             <div class="heart">&hearts;</div>
             <div class="promo_badges">
                 <div v-if="'sale' in product.badges" class="badge percentage">
@@ -36,4 +42,14 @@ export default {
     </div>
 </template>
 
-<style></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+</style>
