@@ -24,10 +24,13 @@ export default {
             </div>
             <div class="heart">&hearts;</div>
             <div class="promo_badges">
-                <div v-if="'sale' in product.badges" class="badge percentage">
-                    {{ product.badges.sale }}
+                <div v-for="badge in product.badges2"
+                    :class="badge.type === 'discount' ? 'percentage' : 'sustainability'" class="badge">{{ badge.value }}
                 </div>
-                <div v-show="product.badges.sustainable" class="badge sustainability">Sostenibilità</div>
+                <!-- <div v-if="'value' in product.badges2[0]" class="badge percentage">
+                    {{ product.badges2[0].value }}
+                </div>
+                <div v-if="'value' in product.badges2[0]" class="badge sustainability">Sostenibilità</div> -->
             </div>
         </div>
         <div class="card_text">

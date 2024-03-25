@@ -10,6 +10,16 @@
                 "newPrice": "14,99",
                 "oldPrice": "29,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {
                 "sale": "-50%",
                 "sustainable": true
@@ -25,6 +35,16 @@
                 "newPrice": "20,99",
                 "oldPrice": "29,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {
                 "sale": "-30%",
                 "sustainable": false
@@ -40,6 +60,16 @@
                 "newPrice": "129,99",
                 "oldPrice": "184,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {
                 "sale": "-30%",
                 "sustainable": false
@@ -55,6 +85,16 @@
                 "newPrice": "14,99",
                 "oldPrice": "29,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {
                 "sale": "-50%",
                 "sustainable": true
@@ -69,6 +109,16 @@
             "price": {
                 "newPrice": "99,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {}
         },
         {
@@ -80,6 +130,16 @@
             "price": {
                 "newPrice": "29,99"
             },
+            "badges2": [
+                {
+                    "type": "discount",
+                    "value": "-50%"
+                },
+                {
+                    "type": "tag",
+                    "value": "Sostenibilità"
+                }
+            ],
             "badges": {
                 "sustainable": true
             }

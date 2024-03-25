@@ -1,6 +1,5 @@
 <script>
 import ProductCard from './ProductCard.vue';
-// import { products } from '../data.js';
 import { store } from '../store.js'
 
 export default {
