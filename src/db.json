@@ -2,147 +2,105 @@
     "products": [
         {
             "id": 1,
-            "name": "Relaxed fit tee unisex",
+            "frontImage": "1.webp",
+            "backImage": "1b.webp",
             "brand": "Levi's",
-            "frontImage": "/img/1.webp",
-            "backImage": "/img/1b.webp",
-            "price": {
-                "newPrice": "14,99",
-                "oldPrice": "29,99"
-            },
-            "badges2": [
-                {
-                    "type": "discount",
-                    "value": "-50%"
-                },
+            "name": "Relaxed Fit",
+            "price": 29.99,
+            "isInFavorites": true,
+            "badges": [
                 {
                     "type": "tag",
                     "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
                 }
-            ],
-            "badges": {
-                "sale": "-50%",
-                "sustainable": true
-            }
+            ]
         },
         {
             "id": 2,
-            "name": "Rose tee",
+            "frontImage": "2.webp",
+            "backImage": "2b.webp",
             "brand": "Guess",
-            "frontImage": "/img/2.webp",
-            "backImage": "/img/2b.webp",
-            "price": {
-                "newPrice": "20,99",
-                "oldPrice": "29,99"
-            },
-            "badges2": [
+            "name": "Roses Tee",
+            "price": 20.99,
+            "isInFavorites": true,
+            "badges": [
                 {
                     "type": "discount",
-                    "value": "-50%"
-                },
-                {
-                    "type": "tag",
-                    "value": "Sostenibilità"
+                    "value": "-30%"
                 }
-            ],
-            "badges": {
-                "sale": "-30%",
-                "sustainable": false
-            }
+            ]
         },
         {
             "id": 3,
-            "name": "Voglia di colori pastello",
+            "frontImage": "3.webp",
+            "backImage": "3b.webp",
             "brand": "Come Zucchero Filato",
-            "frontImage": "/img/3.webp",
-            "backImage": "/img/3b.webp",
-            "price": {
-                "newPrice": "129,99",
-                "oldPrice": "184,99"
-            },
-            "badges2": [
+            "name": "Voglia di colori pastello",
+            "price": 129.99,
+            "isInFavorites": false,
+            "badges": [
                 {
                     "type": "discount",
-                    "value": "-50%"
-                },
-                {
-                    "type": "tag",
-                    "value": "Sostenibilità"
+                    "value": "-30%"
                 }
-            ],
-            "badges": {
-                "sale": "-30%",
-                "sustainable": false
-            }
+            ]
         },
         {
             "id": 4,
-            "name": "Voglia di colori pastello",
+            "frontImage": "4.webp",
+            "backImage": "4b.webp",
             "brand": "Levi's",
-            "frontImage": "/img/4.webp",
-            "backImage": "/img/4b.webp",
-            "price": {
-                "newPrice": "14,99",
-                "oldPrice": "29,99"
-            },
-            "badges2": [
-                {
-                    "type": "discount",
-                    "value": "-50%"
-                },
+            "name": "Tee Unisex",
+            "price": 14.99,
+            "isInFavorites": false,
+            "badges": [
                 {
                     "type": "tag",
                     "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
                 }
-            ],
-            "badges": {
-                "sale": "-50%",
-                "sustainable": true
-            }
+            ]
         },
         {
             "id": 5,
-            "name": "Stripe Bodice",
+            "frontImage": "5.webp",
+            "backImage": "5b.webp",
             "brand": "Maya Deluxe",
-            "frontImage": "/img/5.webp",
-            "backImage": "/img/5b.webp",
-            "price": {
-                "newPrice": "99,99"
-            },
-            "badges2": [
-                {
-                    "type": "discount",
-                    "value": "-50%"
-                },
+            "name": "Stripe Bodice",
+            "price": 99.99,
+            "isInFavorites": true,
+            "badges": [
                 {
                     "type": "tag",
                     "value": "Sostenibilità"
+                },
+                {
+                    "type": "discount",
+                    "value": "-50%"
                 }
-            ],
-            "badges": {}
+            ]
         },
         {
             "id": 6,
+            "frontImage": "6.webp",
+            "backImage": "6b.webp",
+            "brand": "Esprit",
             "name": "Maglione - Black",
-            "brand": "Espirit",
-            "frontImage": "/img/6.webp",
-            "backImage": "/img/6b.webp",
-            "price": {
-                "newPrice": "29,99"
-            },
-            "badges2": [
-                {
-                    "type": "discount",
-                    "value": "-50%"
-                },
+            "price": 29.99,
+            "isInFavorites": true,
+            "badges": [
                 {
                     "type": "tag",
                     "value": "Sostenibilità"
                 }
-            ],
-            "badges": {
-                "sustainable": true
-            }
+            ]
         }
     ]
 }

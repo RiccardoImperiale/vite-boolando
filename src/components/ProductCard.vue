@@ -7,6 +7,13 @@ export default {
         return {
             imageHover: false
         }
+    },
+    methods: {
+        getDiscountedPrice(price, discount) {
+            const percentageValue = Math.abs(parseInt(discount));
+            const discountedPrice = price - (price / 100) * percentageValue;
+            return Math.floor(discountedPrice * 100) / 100; // get only 2 decimals without rounding the number
+        }
     }
 }
 </script>
@@ -14,32 +21,30 @@ export default {
 <template>
     <div class="card">
         <div class="card_image">
-            <!-- <img @mouseover="imageHover = true" @mouseleave="imageHover = false"
-                :src="imageHover ? product.backImage : product.frontImage" alt=""> -->
             <div class="images_container" @mouseover="imageHover = true" @mouseleave="imageHover = false">
                 <Transition>
-                    <img v-if="imageHover" :src="product.backImage" alt="">
-                    <img v-else :src="product.frontImage" alt="">
+                    <img v-if="imageHover" :src="'./img/' + product.backImage" :alt="product.name">
+                    <img v-else :src="'./img/' + product.frontImage" :alt="product.name">
                 </Transition>
             </div>
             <div class="heart">&hearts;</div>
             <div class="promo_badges">
-                <div v-for="badge in product.badges2"
+                <div v-for="badge in product.badges"
                     :class="badge.type === 'discount' ? 'percentage' : 'sustainability'" class="badge">{{ badge.value }}
                 </div>
-                <!-- <div v-if="'value' in product.badges2[0]" class="badge percentage">
-                    {{ product.badges2[0].value }}
-                </div>
-                <div v-if="'value' in product.badges2[0]" class="badge sustainability">Sostenibilità</div> -->
             </div>
         </div>
         <div class="card_text">
             <h5 class="brand">{{ product.brand }}</h5>
             <h4>{{ product.name }}</h4>
             <div class="price">
-                <span class="new_price">{{ product.price.newPrice }} &euro; </span>
-                <span v-if="'oldPrice' in product.price" class="old_price">{{ product.price.oldPrice }}
-                    &euro;</span>
+                <span v-if="product.badges.some(badge => badge.type === 'discount')" class="new_price">
+                    {{ getDiscountedPrice(product.price, product.badges.find(badge => badge.type ===
+                'discount').value) }}&euro;
+                </span>
+                <span v-else class="new_price">{{ product.price }}&euro;</span>
+                <span v-if="product.badges.find(badge => badge.type === 'discount')" class="old_price">{{ product.price
+                    }}&euro;</span>
             </div>
         </div>
     </div>
