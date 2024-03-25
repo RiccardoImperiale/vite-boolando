@@ -4,6 +4,7 @@
 
 main {
     .cards_container {
+
         display: flex;
         justify-content: space-between;
         margin: 2rem auto;
@@ -11,11 +12,13 @@ main {
         flex-wrap: wrap;
 
         .card {
+
             height: 700px;
             width: calc((100% / 12) * 4 - 1rem);
             margin-top: 5rem;
 
             .card_image {
+                // background-color: #E7E5E5;
                 height: 100%;
                 position: relative;
                 display: flex;

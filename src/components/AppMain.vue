@@ -1,6 +1,7 @@
 <script>
 import ProductCard from './ProductCard.vue';
-import { products } from '../data.js'
+// import { products } from '../data.js';
+import { store } from '../store.js'
 
 export default {
     name: 'AppMain',
@@ -10,8 +11,11 @@ export default {
     },
     data() {
         return {
-            products
+            store,
         }
+    },
+    mounted() {
+        this.store.getProducts();
     }
 }
 </script>
@@ -19,7 +23,7 @@ export default {
 <template>
     <main>
         <div class="container cards_container">
-            <ProductCard :product="product" v-for="product in products" :key="product.id" />
+            <ProductCard :product="product" v-for="product in store.products" :key="product.id" />
         </div>
     </main>
 </template>
