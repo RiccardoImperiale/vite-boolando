@@ -4,6 +4,11 @@ import axios from 'axios';
 export const store = reactive({
     products: [],
 
+    // showProduct(product) {
+    //     isModalOpen = true;
+    //     productModal = product;
+    // },
+
     getProducts() {
         axios.get('http://localhost:3000/products').then(res => {
             this.products = res.data;

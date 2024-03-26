@@ -5,7 +5,7 @@ import { store } from '../store.js'
 
 export default {
     name: 'AppMain',
-    props: { product: Object },
+    props: ['product', 'showProduct'],
     components: {
         ProductCard,
         ProductModal
@@ -13,14 +13,6 @@ export default {
     data() {
         return {
             store,
-            isModalOpen: false,
-            productModal: null
-        }
-    },
-    methods: {
-        showProduct(product) {
-            this.isModalOpen = true;
-            this.productModal = product;
         }
     },
     mounted() {
@@ -35,8 +27,6 @@ export default {
             <ProductCard :product="product" v-for="product in store.products" :key="product.id"
                 @show-product="showProduct" />
         </div>
-
-        <ProductModal :product="productModal" v-if="isModalOpen" @close-modal="isModalOpen = false" />
     </main>
 </template>
 

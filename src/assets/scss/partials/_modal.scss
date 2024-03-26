@@ -114,6 +114,31 @@
 
             .card_right {
                 width: 30%;
+
+                .card_text {
+                    margin-top: .5rem;
+
+                    h4 {
+                        text-transform: uppercase;
+                        cursor: pointer;
+                    }
+
+                    h5,
+                    .price {
+                        font-weight: 400;
+                        font-size: .95rem;
+                        margin: .2rem 0;
+                    }
+
+                    .new_price {
+                        font-weight: 600;
+                        color: $danger;
+                    }
+
+                    .old_price {
+                        text-decoration: line-through;
+                    }
+                }
             }
         }
     }

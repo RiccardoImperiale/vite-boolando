@@ -89,7 +89,7 @@ main {
     /* Card Text ------------------------------> */
 
     .card_text {
-        margin-top: .25rem;
+        margin-top: .5rem;
 
         h4 {
             text-transform: uppercase;
@@ -99,7 +99,8 @@ main {
         h5,
         .price {
             font-weight: 400;
-            font-size: .8rem;
+            font-size: .95rem;
+            margin: .2rem 0;
         }
 
         .new_price {
