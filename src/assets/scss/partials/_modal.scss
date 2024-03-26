@@ -48,6 +48,29 @@
                         width: 100%;
                         display: block;
                     }
+
+                    .promo_badges {
+                        display: flex;
+                        gap: .2rem;
+                        font-size: .8rem;
+                        color: $light;
+                        font-weight: 800;
+                        position: absolute;
+                        bottom: 3rem;
+                        left: 0;
+
+                        .badge {
+                            padding: .45rem .75rem;
+                        }
+
+                        .percentage {
+                            background-color: $danger;
+                        }
+
+                        .sustainability {
+                            background-color: $success;
+                        }
+                    }
                 }
 
                 .buttons {
