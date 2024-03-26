@@ -11,7 +11,6 @@
 
     .card {
         width: 500px;
-        height: 700px;
         background-color: $light;
         border-radius: 1rem;
         padding: 1rem;
@@ -39,11 +38,20 @@
             .card_left {
                 width: 70%;
                 background-color: aqua;
+                overflow: hidden;
+                border-radius: .5rem;
+
+                .card_image {
+
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
             }
 
             .card_right {
                 width: 30%;
-                background-color: blue;
             }
         }
     }
