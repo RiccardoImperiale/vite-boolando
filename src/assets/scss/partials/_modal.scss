@@ -1,7 +1,7 @@
 @use './variables' as *;
 
 .modal {
-    background-color: rgba(132, 0, 255, 0.597);
+    background-color: #151515da;
     position: fixed;
     inset: 0;
     z-index: 999;
@@ -12,7 +12,7 @@
     .card {
         width: 500px;
         height: 700px;
-        background-color: white;
+        background-color: $light;
         border-radius: 1rem;
         padding: 1rem;
 
@@ -22,7 +22,7 @@
 
             i {
                 font-size: 2rem;
-                color: orange;
+                color: $primary_color;
                 cursor: pointer;
                 transition: color .25s;
             }
