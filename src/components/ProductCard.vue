@@ -36,9 +36,7 @@ export default {
         </div>
         <div class="card_text">
             <h5 class="brand">{{ product.brand }}</h5>
-
             <h4 @click="$emit('showProduct', product)">{{ product.name }}</h4>
-
             <div class="price">
                 <span v-if="product.badges.some(badge => badge.type === 'discount')" class="new_price">
                     {{ getDiscountedPrice(product.price, product.badges.find(badge => badge.type ===

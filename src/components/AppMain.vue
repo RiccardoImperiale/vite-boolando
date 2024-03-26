@@ -12,14 +12,13 @@ export default {
         return {
             store,
             isModalOpen: false,
-            productModal: {}
+            productModal: null
         }
     },
     methods: {
-        showProduct(prod) {
-            console.log(prod);
-            this.isModalOpen = true
-            this.productModal = { name: prod.name }
+        showProduct(product) {
+            this.isModalOpen = true;
+            this.productModal = product;
         }
     },
     mounted() {
@@ -36,13 +35,38 @@ export default {
         </div>
         <div v-if="isModalOpen" class="modal">
             <div class="card">
-                {{ productModal.name }}
+                <div class="card_header">
+                    <i @click="isModalOpen = false" class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="card_main">
+
+                    <div class="card_left">
+                        ger
+                    </div>
+                    <div class="card_right">
+                        <div class="card_text">
+                            <h5 class="brand">{{ productModal.brand }}</h5>
+                            <h4>{{ productModal.name }}</h4>
+                            <!-- <div class="price">
+                        <span v-if="product.badges.some(badge => badge.type === 'discount')" class="new_price">
+                            {{ getDiscountedPrice(product.price, product.badges.find(badge => badge.type ===
+                'discount').value) }}&euro;
+                        </span>
+                        <span v-else class="new_price">{{ product.price }}&euro;</span>
+                        <span v-if="product.badges.find(badge => badge.type === 'discount')" class="old_price">{{
+                product.price
+                            }}&euro;</span>
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .modal {
     background-color: rgba(132, 0, 255, 0.597);
     position: fixed;
@@ -57,6 +81,38 @@ export default {
         height: 700px;
         background-color: white;
         border-radius: 1rem;
+        padding: 1rem;
+
+        .card_header {
+            text-align: end;
+            padding-bottom: .6rem;
+
+            i {
+                font-size: 2rem;
+                color: orange;
+                cursor: pointer;
+                transition: color .25s;
+            }
+
+            i:hover {
+                color: orangered;
+            }
+        }
+
+        .card_main {
+            display: flex;
+            gap: 1rem;
+
+            .card_left {
+                width: 70%;
+                background-color: aqua;
+            }
+
+            .card_right {
+                width: 30%;
+                background-color: blue;
+            }
+        }
     }
 }
 </style>
