@@ -14,18 +14,16 @@ main {
         flex-wrap: wrap;
 
         .card {
-
             height: 700px;
             width: calc((100% / 12) * 4 - 1rem);
             margin-top: 5rem;
 
             .card_image {
-                // background-color: #E7E5E5;
                 height: 100%;
                 position: relative;
                 display: flex;
-                // align-items: center;
-                // justify-content: center;
+                align-items: center;
+                justify-content: center;
                 border-radius: .5rem;
                 overflow: hidden;
 

@@ -7,6 +7,7 @@ export default {
     data() {
         return {
             store,
+            frontImage: true
         }
     }
 }
@@ -22,7 +23,12 @@ export default {
 
                 <div class="card_left">
                     <div class="card_image">
-                        <img :src="'./img/' + product.frontImage" alt="">
+                        <img v-if="frontImage" :src="'./img/' + product.frontImage" alt="">
+                        <img v-else :src="'./img/' + product.backImage" alt="">
+                    </div>
+                    <div class="buttons">
+                        <i @click="frontImage = !frontImage" class="prev fa-solid fa-circle-chevron-left"></i>
+                        <i @click="frontImage = !frontImage" class="next fa-solid fa-circle-chevron-right"></i>
                     </div>
 
                 </div>
