@@ -33,8 +33,8 @@ export default {
                         </div>
                     </div>
                     <div class="buttons">
-                        <i @click="firstImage = !firstImage" class="prev fa-solid fa-circle-chevron-left"></i>
-                        <i @click="firstImage = !firstImage" class="next fa-solid fa-circle-chevron-right"></i>
+                        <i @click.prevent="firstImage = !firstImage" class="prev fa-solid fa-circle-chevron-left"></i>
+                        <i @click.prevent="firstImage = !firstImage" class="next fa-solid fa-circle-chevron-right"></i>
                     </div>
                 </div>
                 <div class="card_right">
