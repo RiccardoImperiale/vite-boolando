@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             store,
-            frontImage: true
+            firstImage: true
         }
     }
 }
@@ -22,7 +22,7 @@ export default {
             <div class="card_main">
                 <div class="card_left">
                     <div class="card_image">
-                        <img v-if="frontImage" :src="'./img/' + product.frontImage" alt="">
+                        <img v-if="firstImage" :src="'./img/' + product.frontImage" alt="">
                         <img v-else :src="'./img/' + product.backImage" alt="">
                         <div class="heart">&hearts;</div>
                         <div class="promo_badges">
@@ -33,8 +33,8 @@ export default {
                         </div>
                     </div>
                     <div class="buttons">
-                        <i @click="frontImage = !frontImage" class="prev fa-solid fa-circle-chevron-left"></i>
-                        <i @click="frontImage = !frontImage" class="next fa-solid fa-circle-chevron-right"></i>
+                        <i @click="firstImage = !firstImage" class="prev fa-solid fa-circle-chevron-left"></i>
+                        <i @click="firstImage = !firstImage" class="next fa-solid fa-circle-chevron-right"></i>
                     </div>
                 </div>
                 <div class="card_right">
