@@ -1,4 +1,6 @@
 @use './variables' as *;
+@use './modal';
+
 
 // Main style ------------------------------------->
 
@@ -90,25 +92,26 @@ main {
 
     .card_text {
         margin-top: .25rem;
-    }
 
-    h4 {
-        text-transform: uppercase;
-    }
+        h4 {
+            text-transform: uppercase;
+            cursor: pointer;
+        }
 
-    h5,
-    .price {
-        font-weight: 400;
-        font-size: .8rem;
-    }
+        h5,
+        .price {
+            font-weight: 400;
+            font-size: .8rem;
+        }
 
-    .new_price {
-        font-weight: 600;
-        color: $danger;
-    }
+        .new_price {
+            font-weight: 600;
+            color: $danger;
+        }
 
-    .old_price {
-        text-decoration: line-through;
+        .old_price {
+            text-decoration: line-through;
+        }
     }
 }
 
