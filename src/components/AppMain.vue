@@ -1,14 +1,12 @@
 <script>
 import ProductCard from './ProductCard.vue';
-import ProductModal from './ProductModal.vue';
-import { store } from '../store.js'
+import { store } from '../store.js';
 
 export default {
     name: 'AppMain',
     props: ['product', 'showProduct'],
     components: {
-        ProductCard,
-        ProductModal
+        ProductCard
     },
     data() {
         return {
