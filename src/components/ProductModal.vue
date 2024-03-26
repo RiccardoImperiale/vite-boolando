@@ -24,6 +24,7 @@ export default {
                     <div class="card_image">
                         <img v-if="frontImage" :src="'./img/' + product.frontImage" alt="">
                         <img v-else :src="'./img/' + product.backImage" alt="">
+                        <div class="heart">&hearts;</div>
                         <div class="promo_badges">
                             <div v-for="badge in product.badges.slice().reverse()"
                                 :class="badge.type === 'discount' ? 'percentage' : 'sustainability'" class="badge">
