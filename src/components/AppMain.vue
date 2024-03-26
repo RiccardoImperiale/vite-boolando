@@ -1,12 +1,14 @@
 <script>
 import ProductCard from './ProductCard.vue';
+import ProductModal from './ProductModal.vue';
 import { store } from '../store.js'
 
 export default {
     name: 'AppMain',
     props: { product: Object },
     components: {
-        ProductCard
+        ProductCard,
+        ProductModal
     },
     data() {
         return {
@@ -35,7 +37,8 @@ export default {
         </div>
 
         <!-- Modal  -->
-        <div v-if="isModalOpen" class="modal">
+        <ProductModal :productModal="productModal" v-if="isModalOpen" @close-modal="isModalOpen = false" />
+        <!-- <div v-if="isModalOpen" class="modal">
             <div class="card">
                 <div class="card_header">
                     <i @click="isModalOpen = false" class="fa-solid fa-circle-xmark"></i>
@@ -69,7 +72,7 @@ export default {
                 </div>
 
             </div>
-        </div>
+        </div> -->
     </main>
 </template>
 
