@@ -1,4 +1,4 @@
-## Descrizione:
+## Milestone 1
 - Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout.
 - Non esagerate con i componenti: less is more.
 
@@ -6,3 +6,16 @@ L’esercizio già lo conoscete (html-css-boolando), ma la sfida è suddividerlo
 
 ### Bonus
 - Popoliamo le voci dell’header (sia le tre voci testuali che le tre icone) dinamicamente.
+
+## Milestone 2
+- Installiamo la libreria json-server e aggiungiamo al package.json lo script “serve” necessario per avviarlo: “json-server --watch db.json”.
+- Impostiamo uno stato globale: quali dati globali gestisce la nostra app?
+- Infine, facciamo in modo che la nostra App, all’avvio, non legga più i dati dall’array statico presente nel componente, ma dall’API che ci rende disponibile json-server.
+
+## Milestone 3
+- Facciamo in modo che al click sul nome del prodotto nella card venga emesso un evento “showProduct” verso il componente App.
+- In App, quando riceviamo l’evento, apriamo una modale che mostra tutte le informazioni testuali del prodotto.
+- Nella modale è presente una X (o un pulsante) per chiuderla.
+
+### Bonus
+- Proviamo a creare una modale più completa: mostriamo le immagini del prodotto sulla sinistra e le informazioni di testo sulla destra.
